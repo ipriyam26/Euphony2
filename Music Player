@@ -10,7 +10,7 @@ global drives
 drives = [ chr(x) + ":" for x in range(65,91) if os.path.exists(chr(x) + ":") ]
 root=Tk()    
 root.title('EUPHONY')
-root.iconbitmap('G:/buttons/sound.ico')
+root.iconbitmap('sound.ico')
 root.geometry('500x500')
 
 #initialize the pygame mixer
@@ -283,11 +283,11 @@ song_box = Listbox(master_frame, bg='black', fg='white',width=60,selectbackgroun
 song_box.grid(row=4,column=0 )
 
 #define player control buttons images
-bk_bn_img= PhotoImage(file='G:/buttons/left-3.png',master=root)
-fr_bn_img= PhotoImage(file='G:/buttons/right-3.png',master=root)
-pl_bn_img= PhotoImage(file='G:/buttons/play-3.png',master=root)
-pa_bn_img= PhotoImage(file='G:/buttons/pause-3.png',master=root)
-loop_bn_imp= PhotoImage(file='G:/buttons/repeat.png',master=root)
+bk_bn_img= PhotoImage(file='left-3.png',master=root)
+fr_bn_img= PhotoImage(file='right-3.png',master=root)
+pl_bn_img= PhotoImage(file='play-3.png',master=root)
+pa_bn_img= PhotoImage(file='pause-3.png',master=root)
+loop_bn_imp= PhotoImage(file='repeat.png',master=root)
 # Create Player control frames
 ctrl_fr = Frame(master_frame)
 ctrl_fr.grid(row=2,column=0,pady=5)
